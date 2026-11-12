@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELORA - Flash Sale Giờ Vàng</title>
+    <!-- Bootstrap CSS Local -->
+    <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap.min.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS chung -->
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar bg-danger text-white">
+        🔥 FLASH SALE GIỜ VÀNG - Săn deal sốc giảm đến 50% toàn bộ danh mục sản phẩm hôm nay!
+    </div>
+
+    <!-- Header & Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="home.html">
+                <span style="font-family: serif; font-weight: 800; font-style: italic; color: var(--primary-pink);">V</span>ELORA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hm.html">Hàng new <span class="badge-hot">Hot</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="nam.html">Men (Nam)</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nu.html">Women (Nữ)</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pk.html">Phụ kiện</a></li>
+                    <li class="nav-item"><a class="nav-link active text-danger fw-bold" href="fs.html">Flash Sale</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <div class="search-box d-none d-lg-flex align-items-center me-2">
+                        <i class="fa-solid fa-magnifying-glass text-muted me-2"></i>
+                        <input type="text" placeholder="Tìm sản phẩm sale...">
+                    </div>
+                    <a href="account.html" class="icon-btn" title="Tài khoản"><i class="fa-regular fa-user"></i></a>
+<a href="cart.html" class="icon-btn" title="Giỏ hàng">
+    <i class="fa-solid fa-bag-shopping"></i>
+    <span class="cart-badge">2</span>
+</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="mb-3">
+            <ol class="breadcrumb small text-muted">
+                <li class="breadcrumb-item"><a href="home.html" class="text-decoration-none text-muted">Trang chủ</a></li>
+                <li class="breadcrumb-item active fw-semibold text-danger" aria-current="page">Flash Sale Giờ Vàng</li>
+            </ol>
+        </nav>
+
+        <!-- Flash Sale Hero Banner -->
+        <div class="flash-hero-banner mb-5 text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <div class="d-inline-flex align-items-center gap-2 bg-white bg-opacity-20 px-3 py-1 rounded-pill small mb-3">
+                        <i class="fa-solid fa-bolt text-warning"></i> SỰ KIỆN GIẢM GIÁ ĐẶC BIỆT TRONG NGÀY
+                    </div>
+                    <h1 class="display-5 fw-bold mb-3">FLASH SALE GIỜ VÀNG</h1>
+                    <p class="text-white-50 mb-4" style="max-width: 500px;">Cơ hội sở hữu những thiết kế thời trang và phụ kiện cao cấp với mức giá ưu đãi chưa từng có. Số lượng có hạn!</p>
+                </div>
+                <div class="col-lg-5 text-lg-end">
+                    <div class="text-uppercase small mb-2 text-white-50 fw-semibold">Kết thúc đợt sale sau:</div>
+                    <div class="flash-timer-box shadow">
+                        <div class="text-center">
+                            <span class="time-digit" id="hours">05</span>
+                            <span class="d-block extra-small text-white-50 mt-1" style="font-size: 10px;">Giờ</span>
+                        </div>
+                        <span class="fs-4 fw-bold">:</span>
+                        <div class="text-center">
+                            <span class="time-digit" id="minutes">42</span>
+                            <span class="d-block extra-small text-white-50 mt-1" style="font-size: 10px;">Phút</span>
+                        </div>
+                        <span class="fs-4 fw-bold">:</span>
+                        <div class="text-center">
+                            <span class="time-digit" id="seconds">19</span>
+                            <span class="d-block extra-small text-white-50 mt-1" style="font-size: 10px;">Giây</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Time Slots Bar -->
+        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-5">
+            <div class="time-tab active"><i class="fa-solid fa-fire me-1"></i> Đang diễn ra (09:00 - 12:00)</div>
+            <div class="time-tab"><i class="fa-regular fa-clock me-1"></i> Sắp diễn ra (12:00 - 15:00)</div>
+            <div class="time-tab"><i class="fa-regular fa-clock me-1"></i> Sắp diễn ra (15:00 - 18:00)</div>
+            <div class="time-tab"><i class="fa-regular fa-clock me-1"></i> Khung giờ tối (19:00 - 22:00)</div>
+        </div>
+
+        <!-- Product Grid (8 Sản Phẩm Flash Sale) -->
+        <div class="row g-4 mb-5">
+            <!-- Item 1 -->
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100 border border-danger border-opacity-25">
+                    <div class="product-img-wrapper">
+                        <span class="product-tag bg-danger text-white">-40%</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=500" alt="Áo Polo">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Áo Polo Nam Slimfit Cotton</div>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="product-price text-danger">150.000₫</span>
+                            <span class="product-old-price">250.000₫</span>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between text-muted" style="font-size: 11px;">
+                                <span>Đã bán 38</span>
+                                <span class="text-danger fw-bold">Sắp cháy hàng</span>
+                            </div>
+                            <div class="progress-flash mt-1">
+                                <div class="progress-bar-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <button class="btn btn-danger w-100 rounded-pill py-2 fw-bold text-white small">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100 border border-danger border-opacity-25">
+                    <div class="product-img-wrapper">
+                        <span class="product-tag bg-danger text-white">-50%</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&q=80&w=500" alt="Áo thun">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Áo Thun Nữ In Họa Tiết</div>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="product-price text-danger">119.000₫</span>
+                            <span class="product-old-price">239.000₫</span>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between text-muted" style="font-size: 11px;">
+                                <span>Đã bán 45</span>
+                                <span class="text-danger fw-bold">Còn 5 sản phẩm</span>
+                            </div>
+                            <div class="progress-flash mt-1">
+                                <div class="progress-bar-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <button class="btn btn-danger w-100 rounded-pill py-2 fw-bold text-white small">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100 border border-danger border-opacity-25">
+                    <div class="product-img-wrapper">
+                        <span class="product-tag bg-danger text-white">-35%</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?auto=format&fit=crop&q=80&w=500" alt="Kẹp tóc">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Kẹp Tóc Nơ Lụa Cao Cấp</div>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="product-price text-danger">59.000₫</span>
+                            <span class="product-old-price">89.000₫</span>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between text-muted" style="font-size: 11px;">
+                                <span>Đã bán 12</span>
+                                <span class="text-muted">Đang mở bán</span>
+                            </div>
+                            <div class="progress-flash mt-1">
+                                <div class="progress-bar-fill" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                        <button class="btn btn-danger w-100 rounded-pill py-2 fw-bold text-white small">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100 border border-danger border-opacity-25">
+                    <div class="product-img-wrapper">
+                        <span class="product-tag bg-danger text-white">-45%</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&q=80&w=500" alt="Ví cầm tay">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Ví Cầm Tay Nữ Thời Trang</div>
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="product-price text-danger">199.000₫</span>
+                            <span class="product-old-price">360.000₫</span>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between text-muted" style="font-size: 11px;">
+                                <span>Đã bán 28</span>
+                                <span class="text-muted">Đang mở bán</span>
+                            </div>
+                            <div class="progress-flash mt-1">
+                                <div class="progress-bar-fill" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <button class="btn btn-danger w-100 rounded-pill py-2 fw-bold text-white small">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand text-white d-flex align-items-center mb-3" href="home.html">
+                        <span style="font-family: serif; font-weight: 800; font-style: italic; color: var(--primary-pink);">V</span>ELORA
+                    </a>
+                    <p class="text-secondary small">Thương hiệu thời trang mang phong cách tinh tế, hiện đại và thời thượng.</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Hỗ trợ</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Hướng dẫn săn deal</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Về chúng tôi</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Câu chuyện thương hiệu</a></li>
+                        <li><a href="#">Hệ thống cửa hàng</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Đăng ký nhận voucher</h5>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control newsletter-input" placeholder="Nhập email...">
+                        <button class="btn btn-light fw-bold px-3" type="button">Gửi</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start small text-secondary">
+                    © 2026 VELORA. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Local -->
+    <script src="./asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Xử lý sự kiện nút yêu thích an toàn
+            document.querySelectorAll('.wishlist-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const icon = this.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-solid');
+                        icon.classList.toggle('fa-regular');
+                        this.classList.toggle('active');
+                    }
+                });
+            });
+
+            // Đồng hồ đếm ngược an toàn không làm treo DOM
+            let totalSeconds = 5 * 3600 + 42 * 60 + 19;
+            const hoursEl = document.getElementById('hours');
+            const minutesEl = document.getElementById('minutes');
+            const secondsEl = document.getElementById('seconds');
+
+            if (hoursEl && minutesEl && secondsEl) {
+                const timerInterval = setInterval(() => {
+                    if (totalSeconds > 0) {
+                        totalSeconds--;
+                        let h = Math.floor(totalSeconds / 3600);
+                        let m = Math.floor((totalSeconds % 3600) / 60);
+                        let s = totalSeconds % 60;
+
+                        hoursEl.textContent = h < 10 ? '0' + h : h;
+                        minutesEl.textContent = m < 10 ? '0' + m : m;
+                        secondsEl.textContent = s < 10 ? '0' + s : s;
+                    } else {
+                        clearInterval(timerInterval);
+                    }
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+</html>

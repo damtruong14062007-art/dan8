@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELORA - Trang Chủ</title>
+    <!-- Bootstrap CSS Local -->
+    <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap.min.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        Miễn phí giao hàng cho đơn hàng từ 500k | Đổi trả dễ dàng trong 30 ngày
+    </div>
+
+    <!-- Header & Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="home.html">
+                <span style="font-family: serif; font-weight: 800; font-style: italic; color: var(--primary-pink);">V</span>ELORA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hm.html">Hàng new <span class="badge-hot">Hot</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="nam.html">Men (Nam)</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nu.html">Women (Nữ)</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pk.html">Phụ kiện</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger fw-bold" href="fs.html">Flash Sale</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <div class="search-box d-none d-lg-flex align-items-center me-2">
+                        <i class="fa-solid fa-magnifying-glass text-muted me-2"></i>
+                        <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                    </div>
+                    <a href="account.html" class="icon-btn" title="Tài khoản"><i class="fa-regular fa-user"></i></a>
+<a href="cart.html" class="icon-btn" title="Giỏ hàng">
+    <i class="fa-solid fa-bag-shopping"></i>
+    <span class="cart-badge">2</span>
+</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        
+        <!-- Hero Banner Main (FASHION STYLE) -->
+        <div class="hero-section text-white position-relative p-5 rounded-4 overflow-hidden" style="background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&q=80&w=1400') center/cover no-repeat; min-height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;">
+            <span class="text-uppercase tracking-widest small mb-2 text-light">Bộ sưu tập thu đông 2026</span>
+            <h1 class="display-3 fw-bold mb-3" style="letter-spacing: 2px;">FASHION STYLE</h1>
+            <p class="lead mb-4" style="max-width: 550px; font-size: 16px;">Tôn vinh khí chất lịch lãm và phong cách thời trang hiện đại với những thiết kế hoàn hảo nhất.</p>
+            <div class="d-flex gap-3">
+                <a href="hm.html" class="btn btn-custom-pink px-4 py-2">Mua ngay</a>
+                <a href="pk.html" class="btn btn-outline-light rounded-pill px-4 py-2 fw-semibold">Xem chi tiết</a>
+            </div>
+        </div>
+
+        <!-- Quick Sub-banners / Categories Bar -->
+        <div class="row g-3 my-4">
+            <div class="col-6 col-md-3">
+                <div class="p-2 bg-white rounded-4 shadow-sm border d-flex align-items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&q=80&w=150" class="rounded-3" style="width: 60px; height: 60px; object-fit: cover;" alt="Nam">
+                    <div>
+                        <div class="fw-bold small">Thời Trang Nam</div>
+                        <span class="text-muted" style="font-size: 11px;">Phong cách lịch lãm</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="p-2 bg-white rounded-4 shadow-sm border d-flex align-items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=150" class="rounded-3" style="width: 60px; height: 60px; object-fit: cover;" alt="Nữ">
+                    <div>
+                        <div class="fw-bold small">Thời Trang Nữ</div>
+                        <span class="text-muted" style="font-size: 11px;">Thanh lịch hiện đại</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="p-2 bg-white rounded-4 shadow-sm border d-flex align-items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&q=80&w=150" class="rounded-3" style="width: 60px; height: 60px; object-fit: cover;" alt="Phụ kiện">
+                    <div>
+                        <div class="fw-bold small">Phụ Kiện Tinh Tế</div>
+                        <span class="text-muted" style="font-size: 11px;">Điểm nhấn phong cách</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="p-2 bg-white rounded-4 shadow-sm border d-flex align-items-center gap-3">
+                    <div class="rounded-3 bg-pink-light d-flex align-items-center justify-content-center text-danger fs-4" style="width: 60px; height: 60px; background: #fff1f3;">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <div>
+                        <div class="fw-bold small">Free Ship 500k</div>
+                        <span class="text-muted" style="font-size: 11px;">Giao hàng toàn quốc</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 1: Gợi Ý Cho Bạn (12 sản phẩm - 3 hàng x 4 cột) -->
+        <div class="d-flex justify-content-between align-items-center mb-4 mt-5">
+            <h3 class="fw-bold m-0">Gợi ý cho bạn</h3>
+            <a href="hm.html" class="text-decoration-none fw-semibold text-dark">Xem tất cả <i class="fa-solid fa-arrow-right ms-1"></i></a>
+        </div>
+
+        <div class="row g-4">
+            <!-- Row 1 -->
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100">
+                    <div class="product-img-wrapper">
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&q=80&w=500" alt="Áo khoác dạ">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Áo Khoác Dạ Form Rộng</div>
+                        <div class="product-price">750.000₫ <span class="product-old-price">920.000₫</span></div>
+                        <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100">
+                    <div class="product-img-wrapper">
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&q=80&w=500" alt="Áo bomber">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Áo Khoác Bomber Minimalist</div>
+                        <div class="product-price">850.000₫ <span class="product-old-price">1.050.000₫</span></div>
+                        <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100">
+                    <div class="product-img-wrapper">
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&q=80&w=500" alt="Áo thun đen">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Áo Thun Len Cổ Lọ Nam</div>
+                        <div class="product-price">320.000₫ <span class="product-old-price">400.000₫</span></div>
+                        <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100">
+                    <div class="product-img-wrapper">
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=500" alt="Polo trắng">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Áo Polo Trắng Basic Premium</div>
+                        <div class="product-price">280.000₫ <span class="product-old-price">350.000₫</span></div>
+                        <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100">
+                    <div class="product-img-wrapper">
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&q=80&w=500" alt="Áo khoác Tweed">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Áo Blazer Tweed Nữ Sang Trọng</div>
+                        <div class="product-price">680.000₫ <span class="product-old-price">850.000₫</span></div>
+                        <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100">
+                    <div class="product-img-wrapper">
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1543087903-1ac2ec7aa8c5?auto=format&fit=crop&q=80&w=500" alt="Áo Cardigan">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Áo Cardigan Len Dệt Mỏng</div>
+                        <div class="product-price">390.000₫ <span class="product-old-price">480.000₫</span></div>
+                        <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100">
+                    <div class="product-img-wrapper">
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&q=80&w=500" alt="Giày sandal nữ">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Giày Sandal Cao Gót Nữ</div>
+                        <div class="product-price">350.000₫ <span class="product-old-price">420.000₫</span></div>
+                        <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100">
+                    <div class="product-img-wrapper">
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=500" alt="Áo sơ mi nữ">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Áo Khoác Nữ Style Hàn Quốc</div>
+                        <div class="product-price">520.000₫ <span class="product-old-price">650.000₫</span></div>
+                        <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 3 -->
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100">
+                    <div class="product-img-wrapper">
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=500" alt="Áo vest">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Áo Vest Nam Công Sở</div>
+                        <div class="product-price">980.000₫ <span class="product-old-price">1.200.000₫</span></div>
+                        <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100">
+                    <div class="product-img-wrapper">
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&q=80&w=500" alt="Quần jean">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Quần Jean Wide Leg Ống Rộng</div>
+                        <div class="product-price">420.000₫ <span class="product-old-price">520.000₫</span></div>
+                        <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100">
+                    <div class="product-img-wrapper">
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&q=80&w=500" alt="Áo khoác đỏ">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Áo Khoác Bomber Đỏ Nổi Bật</div>
+                        <div class="product-price">690.000₫ <span class="product-old-price">850.000₫</span></div>
+                        <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100">
+                    <div class="product-img-wrapper">
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&q=80&w=500" alt="Giày sneaker">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Giày Sneaker Chunky Retro</div>
+                        <div class="product-price">650.000₫ <span class="product-old-price">790.000₫</span></div>
+                        <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: ÁO (Khối nền hồng nhạt bo góc) -->
+        <div class="p-4 rounded-4 my-5" style="background-color: #fff5f7;">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="d-flex align-items-center gap-3">
+                    <h3 class="fw-bold m-0">Áo</h3>
+                    <div class="d-none d-md-flex gap-2">
+                        <span class="badge bg-white text-dark border rounded-pill px-3 py-2">Áo sơ mi</span>
+                        <span class="badge bg-white text-dark border rounded-pill px-3 py-2">Áo thun</span>
+                        <span class="badge bg-white text-dark border rounded-pill px-3 py-2">Áo khoác</span>
+                    </div>
+                </div>
+                <a href="hm.html" class="text-decoration-none fw-semibold text-dark">Xem tất cả <i class="fa-solid fa-arrow-right ms-1"></i></a>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="product-card h-100">
+                        <div class="product-img-wrapper">
+                            <span class="product-tag new">Mới</span>
+                            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&q=80&w=500" alt="Áo sơ mi">
+                        </div>
+                        <div class="p-3">
+                            <div class="product-title">Áo Sơ Mi Form Loose Premium</div>
+                            <div class="product-price">315.000₫</div>
+                            <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="product-card h-100">
+                        <div class="product-img-wrapper">
+                            <span class="product-tag hot">-15%</span>
+                            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&q=80&w=500" alt="Áo thun đen">
+                        </div>
+                        <div class="p-3">
+                            <div class="product-title">Áo Thun Cotton Nữ Cổ Tròn</div>
+                            <div class="product-price">180.000₫ <span class="product-old-price">210.000₫</span></div>
+                            <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="product-card h-100">
+                        <div class="product-img-wrapper">
+                            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&q=80&w=500" alt="Áo len dệt">
+                        </div>
+                        <div class="p-3">
+                            <div class="product-title">Áo Len Dệt Kim Hoạ Tiết Retro</div>
+                            <div class="product-price">410.000₫</div>
+                            <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="product-card h-100">
+                        <div class="product-img-wrapper">
+                            <span class="product-tag hot">-20%</span>
+                            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&q=80&w=500" alt="Áo hoodie">
+                        </div>
+                        <div class="p-3">
+                            <div class="product-title">Áo Hoodie Nỉ Bông Dày Dặn</div>
+                            <div class="product-price">349.000₫ <span class="product-old-price">430.000₫</span></div>
+                            <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: QUẦN (Khối nền hồng nhạt bo góc) -->
+        <div class="p-4 rounded-4 my-5" style="background-color: #fff5f7;">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="d-flex align-items-center gap-3">
+                    <h3 class="fw-bold m-0">Quần</h3>
+                    <div class="d-none d-md-flex gap-2">
+                        <span class="badge bg-white text-dark border rounded-pill px-3 py-2">Quần tây</span>
+                        <span class="badge bg-white text-dark border rounded-pill px-3 py-2">Quần jean</span>
+                        <span class="badge bg-white text-dark border rounded-pill px-3 py-2">Quần short</span>
+                    </div>
+                </div>
+                <a href="hm.html" class="text-decoration-none fw-semibold text-dark">Xem tất cả <i class="fa-solid fa-arrow-right ms-1"></i></a>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="product-card h-100">
+                        <div class="product-img-wrapper">
+                            <span class="product-tag new">Mới</span>
+                            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&q=80&w=500" alt="Quần jean">
+                        </div>
+                        <div class="p-3">
+                            <div class="product-title">Quần Jean Straight Leg Nam</div>
+                            <div class="product-price">399.000₫</div>
+                            <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="product-card h-100">
+                        <div class="product-img-wrapper">
+                            <span class="product-tag hot">-10%</span>
+                            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&q=80&w=500" alt="Quần tây">
+                        </div>
+                        <div class="p-3">
+                            <div class="product-title">Quần Tây Xếp Ly Đường Công Sở</div>
+                            <div class="product-price">459.000₫ <span class="product-old-price">510.000₫</span></div>
+                            <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="product-card h-100">
+                        <div class="product-img-wrapper">
+                            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=500" alt="Quần kaki">
+                        </div>
+                        <div class="p-3">
+                            <div class="product-title">Quần Kaki Form Slimfit Co Giãn</div>
+                            <div class="product-price">380.000₫</div>
+                            <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="product-card h-100">
+                        <div class="product-img-wrapper">
+                            <span class="product-tag hot">-25%</span>
+                            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&q=80&w=500" alt="Quần short">
+                        </div>
+                        <div class="p-3">
+                            <div class="product-title">Quần Short Khaki Linen Thoáng Mát</div>
+                            <div class="product-price">220.000₫ <span class="product-old-price">290.000₫</span></div>
+                            <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4: PHỤ KIỆN (Khối nền hồng nhạt bo góc) -->
+        <div class="p-4 rounded-4 my-5" style="background-color: #fff5f7;">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="d-flex align-items-center gap-3">
+                    <h3 class="fw-bold m-0">Phụ kiện</h3>
+                    <div class="d-none d-md-flex gap-2">
+                        <span class="badge bg-white text-dark border rounded-pill px-3 py-2">Túi xách</span>
+                        <span class="badge bg-white text-dark border rounded-pill px-3 py-2">Mắt kính</span>
+                        <span class="badge bg-white text-dark border rounded-pill px-3 py-2">Trang sức</span>
+                    </div>
+                </div>
+                <a href="pk.html" class="text-decoration-none fw-semibold text-dark">Xem tất cả <i class="fa-solid fa-arrow-right ms-1"></i></a>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="product-card h-100">
+                        <div class="product-img-wrapper">
+                            <span class="product-tag new">Mới</span>
+                            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&q=80&w=500" alt="Túi mini">
+                        </div>
+                        <div class="p-3">
+                            <div class="product-title">Túi Mini Quai Ngọc Trai</div>
+                            <div class="product-price">450.000₫</div>
+                            <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="product-card h-100">
+                        <div class="product-img-wrapper">
+                            <span class="product-tag hot">Hot</span>
+                            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=500" alt="Vòng tay">
+                        </div>
+                        <div class="p-3">
+                            <div class="product-title">Vòng Tay Ngọc Trai Nữ Tinh Tế</div>
+                            <div class="product-price">185.000₫</div>
+                            <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="product-card h-100">
+                        <div class="product-img-wrapper">
+                            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&q=80&w=500" alt="Kính râm">
+                        </div>
+                        <div class="p-3">
+                            <div class="product-title">Kính Mắt Retro Oval Độc Đáo</div>
+                            <div class="product-price">220.000₫</div>
+                            <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="product-card h-100">
+                        <div class="product-img-wrapper">
+                            <span class="product-tag new">Mới</span>
+                            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?auto=format&fit=crop&q=80&w=500" alt="Kẹp tóc">
+                        </div>
+                        <div class="p-3">
+                            <div class="product-title">Kẹp Tóc Nơ Satin Dễ Thương</div>
+                            <div class="product-price">89.000₫</div>
+                            <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 5: FLASH SALE GIỜ VÀNG (Khối màu đỏ rực rỡ) -->
+        <div class="bg-danger rounded-4 p-4 my-5 text-white shadow-sm">
+            <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+                <div class="d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-bolt text-warning fs-3"></i>
+                    <h3 class="fw-bold m-0 text-white">FLASH SALE GIỜ VÀNG</h3>
+                </div>
+                <div class="d-flex align-items-center gap-2 mt-2 mt-md-0">
+                    <span class="small">Kết thúc sau:</span>
+                    <span class="bg-dark text-white px-2 py-1 rounded fw-bold">05</span> :
+                    <span class="bg-dark text-white px-2 py-1 rounded fw-bold">42</span> :
+                    <span class="bg-dark text-white px-2 py-1 rounded fw-bold">19</span>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="product-card h-100">
+                        <div class="product-img-wrapper">
+                            <span class="product-tag bg-danger text-white">-35%</span>
+                            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=500" alt="Sale 1">
+                        </div>
+                        <div class="p-3">
+                            <div class="product-title">Áo Polo Nam Slimfit Cotton</div>
+                            <div class="product-price">155.000₫ <span class="product-old-price">240.000₫</span></div>
+                            <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="product-card h-100">
+                        <div class="product-img-wrapper">
+                            <span class="product-tag bg-danger text-white">-40%</span>
+                            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&q=80&w=500" alt="Sale 2">
+                        </div>
+                        <div class="p-3">
+                            <div class="product-title">Áo Thun Nữ In Họa Tiết</div>
+                            <div class="product-price">119.000₫ <span class="product-old-price">199.000₫</span></div>
+                            <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="product-card h-100">
+                        <div class="product-img-wrapper">
+                            <span class="product-tag bg-danger text-white">-30%</span>
+                            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?auto=format&fit=crop&q=80&w=500" alt="Sale 3">
+                        </div>
+                        <div class="p-3">
+                            <div class="product-title">Kẹp Tóc Nơ Lụa Cao Cấp</div>
+                            <div class="product-price">59.000₫ <span class="product-old-price">89.000₫</span></div>
+                            <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="product-card h-100">
+                        <div class="product-img-wrapper">
+                            <span class="product-tag bg-danger text-white">-50%</span>
+                            <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&q=80&w=500" alt="Sale 4">
+                        </div>
+                        <div class="p-3">
+                            <div class="product-title">Ví Cầm Tay Nữ Thời Trang</div>
+                            <div class="product-price">199.000₫ <span class="product-old-price">399.000₫</span></div>
+                            <button class="btn-add-cart mt-3">Thêm vào giỏ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lookbook Grid Section -->
+        <div class="my-5">
+            <h3 class="fw-bold text-center mb-1">Velora Lookbook</h3>
+            <p class="text-center text-muted small mb-4">Cảm hứng phối đồ dẫn đầu xu hướng thời trang 2026</p>
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <div class="rounded-4 overflow-hidden shadow-sm position-relative" style="height: 280px;">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=500" class="w-100 h-100 object-fit-cover" alt="Lookbook 1">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="rounded-4 overflow-hidden shadow-sm position-relative" style="height: 280px;">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=500" class="w-100 h-100 object-fit-cover" alt="Lookbook 2">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="rounded-4 overflow-hidden shadow-sm position-relative" style="height: 280px;">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=500" class="w-100 h-100 object-fit-cover" alt="Lookbook 3">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="rounded-4 overflow-hidden shadow-sm position-relative" style="height: 280px;">
+                        <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=500" class="w-100 h-100 object-fit-cover" alt="Lookbook 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand text-white d-flex align-items-center mb-3" href="#">
+                        <span style="font-family: serif; font-weight: 800; font-style: italic; color: var(--primary-pink);">V</span>ELORA
+                    </a>
+                    <p class="text-secondary small">Thương hiệu thời trang mang phong cách tinh tế, hiện đại và thời thượng. Chất lượng luôn là ưu tiên hàng đầu.</p>
+                    <p class="text-secondary small mb-1"><strong>Hotline:</strong> 1900 8888 (08:00 - 22:00)</p>
+                    <p class="text-secondary small"><strong>Email:</strong> contact@velora.vn</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Hỗ trợ khách hàng</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Chính sách giao hàng</a></li>
+                        <li><a href="#">Phương thức thanh toán</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Về chúng tôi</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Câu chuyện thương hiệu</a></li>
+                        <li><a href="#">Hệ thống cửa hàng</a></li>
+                        <li><a href="#">Khách hàng VIP</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Đăng ký nhận voucher 10%</h5>
+                    <p class="text-secondary small">Nhận thông tin và mã ưu đãi độc quyền sớm nhất.</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control newsletter-input" placeholder="Nhập email của bạn...">
+                        <button class="btn btn-light fw-bold px-3" type="button">Gửi</button>
+                    </div>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start small text-secondary">
+                    © 2026 VELORA. All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <span class="badge bg-secondary text-dark bg-opacity-25 px-2 py-1 me-1">VISA</span>
+                    <span class="badge bg-secondary text-dark bg-opacity-25 px-2 py-1 me-1">MASTERCARD</span>
+                    <span class="badge bg-secondary text-dark bg-opacity-25 px-2 py-1 me-1">MOMO</span>
+                    <span class="badge bg-secondary text-dark bg-opacity-25 px-2 py-1">COD</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Local -->
+    <script src="./asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Tương tác nút yêu thích
+        document.querySelectorAll('.wishlist-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                icon.classList.toggle('fa-solid');
+                icon.classList.toggle('fa-regular');
+                this.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

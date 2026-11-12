@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELORA - Giỏ Hàng Của Bạn</title>
+    <!-- Bootstrap CSS Local -->
+    <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap.min.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS chung -->
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        Miễn phí giao hàng cho đơn hàng từ 500k | Đổi trả dễ dàng trong 30 ngày
+    </div>
+
+    <!-- Header & Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="home.html">
+                <span style="font-family: serif; font-weight: 800; font-style: italic; color: var(--primary-pink);">V</span>ELORA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hm.html">Hàng new <span class="badge-hot">Hot</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="nam.html">Men (Nam)</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nu.html">Women (Nữ)</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pk.html">Phụ kiện</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger fw-bold" href="fs.html">Flash Sale</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <div class="search-box d-none d-lg-flex align-items-center me-2">
+                        <i class="fa-solid fa-magnifying-glass text-muted me-2"></i>
+                        <input type="text" placeholder="Tìm kiếm...">
+                    </div>
+                    <a href="account.html" class="icon-btn" title="Tài khoản"><i class="fa-regular fa-user"></i></a>
+<a href="cart.html" class="icon-btn" title="Giỏ hàng">
+    <i class="fa-solid fa-bag-shopping"></i>
+    <span class="cart-badge">2</span>
+</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb small text-muted">
+                <li class="breadcrumb-item"><a href="home.html" class="text-decoration-none text-muted">Trang chủ</a></li>
+                <li class="breadcrumb-item active fw-semibold text-dark" aria-current="page">Giỏ hàng của bạn</li>
+            </ol>
+        </nav>
+
+        <h2 class="fw-bold mb-4" style="font-family: serif;">Giỏ Hàng Của Bạn (2 sản phẩm)</h2>
+
+        <div class="row g-4">
+            <!-- Danh sách sản phẩm trong giỏ -->
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm rounded-4 p-4 mb-3">
+                    <div class="row align-items-center g-3">
+                        <div class="col-md-2 col-4">
+                            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=300" class="img-fluid rounded-3" alt="Áo Polo">
+                        </div>
+                        <div class="col-md-5 col-8">
+                            <h6 class="fw-bold mb-1">Áo Polo Nam Slimfit Cotton</h6>
+                            <p class="text-muted small mb-1">Phân loại: Xanh Navy / Size L</p>
+                            <span class="text-danger fw-bold small">150.000₫</span>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="input-group input-group-sm" style="width: 110px;">
+                                <button class="btn btn-outline-secondary" type="button">-</button>
+                                <input type="text" class="form-control text-center bg-white" value="1" readonly>
+                                <button class="btn btn-outline-secondary" type="button">+</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-6 text-end">
+                            <span class="fw-bold text-dark d-block mb-2">150.000₫</span>
+                            <button class="btn btn-link text-danger p-0 small text-decoration-none"><i class="fa-regular fa-trash-can"></i> Xóa</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-0 shadow-sm rounded-4 p-4">
+                    <div class="row align-items-center g-3">
+                        <div class="col-md-2 col-4">
+                            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&q=80&w=300" class="img-fluid rounded-3" alt="Túi xách">
+                        </div>
+                        <div class="col-md-5 col-8">
+                            <h6 class="fw-bold mb-1">Túi mini quai ngọc trai</h6>
+                            <p class="text-muted small mb-1">Phân loại: Hồng Pastel</p>
+                            <span class="text-danger fw-bold small">450.000₫</span>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="input-group input-group-sm" style="width: 110px;">
+                                <button class="btn btn-outline-secondary" type="button">-</button>
+                                <input type="text" class="form-control text-center bg-white" value="1" readonly>
+                                <button class="btn btn-outline-secondary" type="button">+</button>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-6 text-end">
+                            <span class="fw-bold text-dark d-block mb-2">450.000₫</span>
+                            <button class="btn btn-link text-danger p-0 small text-decoration-none"><i class="fa-regular fa-trash-can"></i> Xóa</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tổng tiền & Thanh toán -->
+            <div class="col-lg-4">
+                <div class="card border-0 shadow-sm rounded-4 p-4 bg-light">
+                    <h5 class="fw-bold mb-3">Cộng giỏ hàng</h5>
+                    <div class="d-flex justify-content-between mb-2 text-muted small">
+                        <span>Tạm tính:</span>
+                        <span class="fw-semibold text-dark">600.000₫</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3 text-muted small">
+                        <span>Phí vận chuyển:</span>
+                        <span class="text-success fw-semibold">Miễn phí (Đơn > 500k)</span>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-sm bg-white" placeholder="Mã giảm giá...">
+                        <button class="btn btn-outline-dark btn-sm" type="button">Áp dụng</button>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between mb-4">
+                        <span class="fw-bold fs-6">Tổng cộng:</span>
+                        <span class="fw-bold fs-5 text-danger">600.000₫</span>
+                    </div>
+                    <button class="btn btn-custom-pink w-100 py-3 fw-bold">Tiến hành thanh toán</button>
+                    <a href="home.html" class="btn btn-outline-dark w-100 mt-2 rounded-pill py-2 small">Tiếp tục mua sắm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand text-white d-flex align-items-center mb-3" href="home.html">
+                        <span style="font-family: serif; font-weight: 800; font-style: italic; color: var(--primary-pink);">V</span>ELORA
+                    </a>
+                    <p class="text-secondary small">Thương hiệu thời trang mang phong cách tinh tế, hiện đại và thời thượng.</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Hỗ trợ</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Giao hàng</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Về chúng tôi</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Thương hiệu</a></li>
+                        <li><a href="#">Cửa hàng</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Đăng ký nhận voucher</h5>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control newsletter-input" placeholder="Nhập email...">
+                        <button class="btn btn-light fw-bold px-3" type="button">Gửi</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="small text-secondary">© 2026 VELORA. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Local -->
+    <script src="./asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

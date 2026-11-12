@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELORA - Tài Khoản Của Tôi</title>
+    <!-- Bootstrap CSS Local -->
+    <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap.min.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS chung -->
+    <link rel="stylesheet" href="stile.css">
+    <style>
+        .account-sidebar .list-group-item {
+            border: none;
+            padding: 12px 20px;
+            font-weight: 600;
+            font-size: 14px;
+            color: #555;
+            border-radius: 8px !important;
+            margin-bottom: 5px;
+            transition: var(--transition-smooth);
+        }
+        .account-sidebar .list-group-item:hover, .account-sidebar .list-group-item.active {
+            background-color: var(--light-pink);
+            color: var(--primary-pink);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        Miễn phí giao hàng cho đơn hàng từ 500k | Đổi trả dễ dàng trong 30 ngày
+    </div>
+
+    <!-- Header & Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="home.html">
+                <span style="font-family: serif; font-weight: 800; font-style: italic; color: var(--primary-pink);">V</span>ELORA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hm.html">Hàng new <span class="badge-hot">Hot</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="nam.html">Men (Nam)</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nu.html">Women (Nữ)</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pk.html">Phụ kiện</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger fw-bold" href="fs.html">Flash Sale</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <div class="search-box d-none d-lg-flex align-items-center me-2">
+                        <i class="fa-solid fa-magnifying-glass text-muted me-2"></i>
+                        <input type="text" placeholder="Tìm kiếm...">
+                    </div>
+                    <a href="account.html" class="icon-btn" title="Tài khoản"><i class="fa-regular fa-user"></i></a>
+<a href="cart.html" class="icon-btn" title="Giỏ hàng">
+    <i class="fa-solid fa-bag-shopping"></i>
+    <span class="cart-badge">2</span>
+</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb small text-muted">
+                <li class="breadcrumb-item"><a href="home.html" class="text-decoration-none text-muted">Trang chủ</a></li>
+                <li class="breadcrumb-item active fw-semibold text-dark" aria-current="page">Tài khoản của tôi</li>
+            </ol>
+        </nav>
+
+        <div class="row g-4">
+            <!-- Sidebar Quản lý tài khoản -->
+            <div class="col-lg-3">
+                <div class="card border-0 shadow-sm rounded-4 p-3 account-sidebar">
+                    <div class="d-flex align-items-center gap-3 px-3 py-2 mb-3 border-bottom">
+                        <div class="rounded-circle bg-light d-flex align-items-center justify-content-center text-danger fw-bold fs-5" style="width: 45px; height: 45px;">N</div>
+                        <div>
+                            <h6 class="fw-bold mb-0">Nguyễn Văn A</h6>
+                            <span class="text-muted small">Thành viên VIP</span>
+                        </div>
+                    </div>
+                    <div class="list-group list-group-flush">
+                        <a href="#" class="list-group-item list-group-item-action active"><i class="fa-solid fa-user-pen me-2"></i> Hồ sơ cá nhân</a>
+                        <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-box-archive me-2"></i> Đơn hàng của tôi</a>
+                        <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-location-dot me-2"></i> Sổ địa chỉ giao hàng</a>
+                        <a href="#" class="list-group-item list-group-item-action"><i class="fa-solid fa-heart me-2"></i> Sản phẩm yêu thích</a>
+                        <a href="home.html" class="list-group-item list-group-item-action text-danger mt-3"><i class="fa-solid fa-right-from-bracket me-2"></i> Đăng xuất</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nội dung chi tiết hồ sơ -->
+            <div class="col-lg-9">
+                <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5">
+                    <h4 class="fw-bold mb-4" style="font-family: serif;">Thông Tin Tài Khoản</h4>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label small fw-semibold">Họ và tên</label>
+                                <input type="text" class="form-control rounded-pill bg-light" value="Nguyễn Văn A">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-semibold">Số điện thoại</label>
+                                <input type="text" class="form-control rounded-pill bg-light" value="0988 123 456">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-semibold">Địa chỉ Email</label>
+                                <input type="email" class="form-control rounded-pill bg-light" value="nguyenvana@gmail.com">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-semibold">Ngày sinh</label>
+                                <input type="date" class="form-control rounded-pill bg-light" value="1998-05-15">
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="button" class="btn btn-custom-pink px-4">Lưu thay đổi</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand text-white d-flex align-items-center mb-3" href="home.html">
+                        <span style="font-family: serif; font-weight: 800; font-style: italic; color: var(--primary-pink);">V</span>ELORA
+                    </a>
+                    <p class="text-secondary small">Thương hiệu thời trang mang phong cách tinh tế, hiện đại và thời thượng.</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Hỗ trợ</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Giao hàng</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Về chúng tôi</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Thương hiệu</a></li>
+                        <li><a href="#">Cửa hàng</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Đăng ký nhận voucher</h5>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control newsletter-input" placeholder="Nhập email...">
+                        <button class="btn btn-light fw-bold px-3" type="button">Gửi</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="small text-secondary">© 2026 VELORA. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Local -->
+    <script src="./asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

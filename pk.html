@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELORA - Phụ Kiện Cao Cấp</title>
+    <!-- Bootstrap CSS Local -->
+    <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap.min.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stile.css">
+    
+    <style>
+        /* Tùy chỉnh riêng cho trang Phụ Kiện */
+        .accessory-filter-pill {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 50px;
+            padding: 10px 24px;
+            font-weight: 600;
+            font-size: 13px;
+            color: #444;
+            transition: var(--transition-smooth);
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .accessory-filter-pill:hover, .accessory-filter-pill.active {
+            background: var(--primary-pink);
+            color: #fff;
+            border-color: var(--primary-pink);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(194, 24, 91, 0.25);
+        }
+        .hero-split-box {
+            background: linear-gradient(135deg, #fce4ec 0%, #fff5f8 100%);
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        Miễn phí giao hàng cho đơn hàng từ 500k | Đổi trả dễ dàng trong 30 ngày[cite: 11]
+    </div>
+
+    <!-- Header & Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="home.html">
+                <span style="font-family: serif; font-weight: 800; font-style: italic; color: var(--primary-pink);">V</span>ELORA
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hm.html">Hàng new <span class="badge-hot">Hot</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="nam.html">Men (Nam)</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nu.html">Women (Nữ)</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="pk.html">Phụ kiện</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger fw-bold" href="fs.html">Flash Sale</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <div class="search-box d-none d-lg-flex align-items-center me-2">
+                        <i class="fa-solid fa-magnifying-glass text-muted me-2"></i>
+                        <input type="text" placeholder="Tìm kiếm phụ kiện...">
+                    </div>
+                    <a href="account.html" class="icon-btn" title="Tài khoản"><i class="fa-regular fa-user"></i></a>
+<a href="cart.html" class="icon-btn" title="Giỏ hàng">
+    <i class="fa-solid fa-bag-shopping"></i>
+    <span class="cart-badge">2</span>
+</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="mb-3">
+            <ol class="breadcrumb small text-muted">
+                <li class="breadcrumb-item"><a href="home.html" class="text-decoration-none text-muted">Trang chủ</a></li>
+                <li class="breadcrumb-item active fw-semibold text-dark" aria-current="page">Phụ kiện</li>
+            </ol>
+        </nav>
+
+        <!-- Hero Split Banner (Phụ kiện) -->
+        <div class="hero-split-box mb-5">
+            <div class="row align-items-center g-0">
+                <div class="col-lg-6 p-5">
+                    <span class="text-uppercase fw-bold text-muted small tracking-wide">The Little Details, Big Style</span>
+                    <h1 class="hero-title my-3">Chi tiết nhỏ,<br>phong cách lớn.</h1>
+                    <p class="text-muted mb-4">Tôn vinh vẻ đẹp tinh tế và ngoại hình sành điệu với những điểm nhấn hoàn hảo cho tủ đồ của bạn[cite: 11].</p>
+                    <a href="#danh-sach-phu-kien" class="btn btn-custom-pink">Khám phá bộ sưu tập</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="p-4">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&q=80&w=800" class="img-fluid rounded-4 shadow-sm w-100" style="max-height: 340px; object-fit: cover;" alt="Accessories Hero">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tìm món phụ kiện của bạn (Filter Pills) -->
+        <div id="danh-sach-phu-kien" class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="fw-bold m-0">Tìm món phụ kiện của bạn</h4>
+                <span class="text-muted small">Khám phá toàn bộ danh mục phụ kiện[cite: 11]</span>
+            </div>
+            <div class="d-flex flex-wrap gap-2">
+                <div class="accessory-filter-pill active"><i class="fa-solid fa-fire text-danger"></i> 01. Tất cả phụ kiện</div>
+                <div class="accessory-filter-pill">👜 02. Túi xách</div>
+                <div class="accessory-filter-pill">💍 03. Trang sức</div>
+                <div class="accessory-filter-pill">🕶️ 04. Kính mát</div>
+                <div class="accessory-filter-pill">👒 05. Phụ kiện tóc</div>
+            </div>
+        </div>
+
+        <!-- Section Header -->
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <h3 class="fw-bold m-0">Phụ kiện dành cho bạn</h3>
+                <span class="text-muted small">Những món đồ tinh tế được chọn lọc cho mọi phong cách mỗi ngày[cite: 11]</span>
+            </div>
+            <a href="#" class="text-decoration-none fw-semibold text-dark small">Xem tất cả (8+ mẫu) <i class="fa-solid fa-arrow-right ms-1"></i></a>
+        </div>
+
+        <!-- Product Grid (8 Items - Phụ kiện chuẩn Figma) -->
+        <div class="row g-4 mb-5">
+            
+            <!-- Item 1 -->
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100">
+                    <div class="product-img-wrapper">
+                        <span class="product-tag hot">Best Seller</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&q=80&w=500" alt="Túi mini quai ngọc trai">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Túi mini quai ngọc trai[cite: 11]</div>
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="product-price">450.000₫</span>
+                            <span class="product-old-price">550.000₫</span>
+                        </div>
+                        <button class="btn-add-cart">Mua sản phẩm</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100">
+                    <div class="product-img-wrapper">
+                        <span class="product-tag new">Mới</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=500" alt="Dây chuyền ngọc trai">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Dây chuyền ngọc trai[cite: 11]</div>
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="product-price">185.000₫</span>
+                        </div>
+                        <button class="btn-add-cart">Mua sản phẩm</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100">
+                    <div class="product-img-wrapper">
+                        <span class="product-tag hot">Hot Trend</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&q=80&w=500" alt="Kính mắt retro">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Kính mắt retro[cite: 11]</div>
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="product-price">220.000₫</span>
+                        </div>
+                        <button class="btn-add-cart">Mua sản phẩm</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100">
+                    <div class="product-img-wrapper">
+                        <span class="product-tag new">Mới</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1535043934128-cf0b28d52f95?auto=format&fit=crop&q=80&w=500" alt="Kẹp tóc nơ satin">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Kẹp tóc nơ satin[cite: 11]</div>
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="product-price">89.000₫</span>
+                        </div>
+                        <button class="btn-add-cart">Mua sản phẩm</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100">
+                    <div class="product-img-wrapper">
+                        <span class="product-tag hot">Hot</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80&w=500" alt="Túi đeo vai baguette">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Túi đeo vai baguette[cite: 11]</div>
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="product-price">355.000₫</span>
+                        </div>
+                        <button class="btn-add-cart">Mua sản phẩm</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100">
+                    <div class="product-img-wrapper">
+                        <span class="product-tag" style="background: #d4af37;">Gold</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1635767798638-3e25273a8236?auto=format&fit=crop&q=80&w=500" alt="Khuyên tai vòng mạ vàng">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Khuyên tai vòng mạ vàng[cite: 11]</div>
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="product-price">155.000₫</span>
+                        </div>
+                        <button class="btn-add-cart">Mua sản phẩm</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100">
+                    <div class="product-img-wrapper">
+                        <span class="product-tag new">Silk</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&q=80&w=500" alt="Khăn lụa họa tiết hoa">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Khăn lụa họa tiết hoa[cite: 11]</div>
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="product-price">129.000₫</span>
+                        </div>
+                        <button class="btn-add-cart">Mua sản phẩm</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="col-6 col-md-3">
+                <div class="product-card h-100">
+                    <div class="product-img-wrapper">
+                        <span class="product-tag hot">Hot</span>
+                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                        <img src="https://images.unsplash.com/photo-1611591475141-692795f7004f?auto=format&fit=crop&q=80&w=500" alt="Vòng tay ngọc trai nhỏ">
+                    </div>
+                    <div class="p-3">
+                        <div class="product-title">Vòng tay ngọc trai nhỏ[cite: 11]</div>
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="product-price">149.000₫</span>
+                        </div>
+                        <button class="btn-add-cart">Mua sản phẩm</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Lookbook Banner Section (Accessories) -->
+        <div class="lookbook-banner row align-items-center">
+            <div class="col-lg-6">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=800" class="img-fluid rounded-4 shadow-sm w-100" alt="Lookbook Phụ Kiện" style="max-height: 350px; object-fit: cover;">
+            </div>
+            <div class="col-lg-6 ps-lg-5 mt-4 mt-lg-0">
+                <span class="text-uppercase small fw-bold text-muted">Velora Lookbook</span>
+                <h2 class="fw-bold my-2">Một bản phối, nhiều dấu ấn.</h2>
+                <p class="text-muted mb-4">Túi xách, trang sức và các phụ kiện tinh tế mang đến nét chấm phá đầy ấn tượng cho trang phục của bạn[cite: 11].</p>
+                <div class="d-flex gap-3">
+                    <button class="btn btn-dark rounded-pill px-4">Xem lookbook nữ</button>
+                    <button class="btn btn-outline-dark rounded-pill px-4">Xem lookbook nam</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 Value Highlights -->
+        <div class="row g-4 my-5 text-center">
+            <div class="col-md-4">
+                <div class="p-4 bg-white rounded-4 shadow-sm border h-100">
+                    <span class="text-danger fw-bold fs-5">01</span>
+                    <h6 class="fw-bold mt-2">Chọn lựa tinh tế[cite: 11]</h6>
+                    <p class="text-muted small mb-0">Thiết kế độc quyền, chất lượng tuyển chọn kỹ lưỡng[cite: 11].</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 bg-white rounded-4 shadow-sm border h-100">
+                    <span class="text-danger fw-bold fs-5">02</span>
+                    <h6 class="fw-bold mt-2">Đóng gói nâng niu[cite: 11]</h6>
+                    <p class="text-muted small mb-0">Hộp quà sang trọng, chỉn chu trong từng chi tiết[cite: 11].</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 bg-white rounded-4 shadow-sm border h-100">
+                    <span class="text-danger fw-bold fs-5">03</span>
+                    <h6 class="fw-bold mt-2">Luôn sẵn sàng tư vấn[cite: 11]</h6>
+                    <p class="text-muted small mb-0">Đội ngũ CSKH tận tâm hỗ trợ 24/7[cite: 11].</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="bg-light rounded-4 p-4 p-md-5 text-center my-5 border">
+            <h3 class="fw-bold mb-2">Một chút cảm hứng gửi đến bạn</h3>
+            <p class="text-muted mb-4 small">Đăng ký để nhận bản tin và ưu đãi đặc quyền từ Velora[cite: 11].</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <input type="email" class="form-control newsletter-input bg-white border" placeholder="Nhập địa chỉ email của bạn...">
+                        <button class="btn btn-custom-pink px-4" type="button">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand text-white d-flex align-items-center mb-3" href="#">
+                        <span style="font-family: serif; font-weight: 800; font-style: italic; color: var(--primary-pink);">V</span>ELORA
+                    </a>
+                    <p class="text-secondary small">Thương hiệu thời trang mang phong cách tinh tế, hiện đại và thời thượng. Chất lượng là ưu tiên hàng đầu.</p>
+                    <p class="text-secondary small mb-1"><strong>Hotline:</strong> 1900 8888 (08:00 - 22:00)</p>
+                    <p class="text-secondary small"><strong>Email:</strong> contact@velora.vn</p>
+                    <p class="text-secondary small"><strong>Địa chỉ:</strong> 123 Đường Thời Trang, Q.1, TP. HCM</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Hỗ trợ khách hàng</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Chính sách giao hàng</a></li>
+                        <li><a href="#">Phương thức thanh toán</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h5>Về chúng tôi</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#">Câu chuyện thương hiệu</a></li>
+                        <li><a href="#">Hệ thống cửa hàng</a></li>
+                        <li><a href="#">Khách hàng thân thiết VIP</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Đăng ký nhận voucher 10%</h5>
+                    <p class="text-secondary small">Nhận thông tin và mã ưu đãi độc quyền sớm nhất.</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control newsletter-input" placeholder="Nhập email của bạn...">
+                        <button class="btn btn-light fw-bold px-3" type="button">Gửi</button>
+                    </div>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start small text-secondary">
+                    © 2026 VELORA. All rights reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <span class="badge bg-secondary text-dark bg-opacity-25 px-2 py-1 me-1">VISA</span>
+                    <span class="badge bg-secondary text-dark bg-opacity-25 px-2 py-1 me-1">MASTERCARD</span>
+                    <span class="badge bg-secondary text-dark bg-opacity-25 px-2 py-1 me-1">MOMO</span>
+                    <span class="badge bg-secondary text-dark bg-opacity-25 px-2 py-1">COD</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Local -->
+    <script src="./asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Tương tác nút yêu thích
+        document.querySelectorAll('.wishlist-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                icon.classList.toggle('fa-solid');
+                icon.classList.toggle('fa-regular');
+                this.classList.toggle('active');
+            });
+        });
+
+        // Tương tác bộ lọc phụ kiện
+        document.querySelectorAll('.accessory-filter-pill').forEach(pill => {
+            pill.addEventListener('click', function() {
+                document.querySelectorAll('.accessory-filter-pill').forEach(p => p.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
